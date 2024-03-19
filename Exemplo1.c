@@ -1,25 +1,25 @@
 #include <stdio.h>
 
-static  int a = 0;  // variável global, alocação estática
+static  int a = 0;  // variÃ¡vel global, alocaÃ§Ã£o estÃ¡tica
 
 void incrementa(void)
 {
-int b = 0; // variável local, alocação automática
-static int c = 0; // variável local, alocação estática
+    int b = 0; // variÃ¡vel local, alocaÃ§Ã£o automÃ¡tica
+    static int c = 0; // variÃ¡vel local, alocaÃ§Ã£o estÃ¡tica
 
-printf ("a: %d, b: %d, c: %d\n", a, b, c);
-a++ ;
-b++ ;
-c++ ;
+    printf ("a: %d, b: %d, c: %d\n", a, b, c);
+    a++ ;
+    b++ ;
+    c++ ;
 }
 
 int main(void)
 {
-int i;
+    int i;
 
-for (i = 0; i < 5; i++)
-incrementa();
+    for (i = 0; i < 5; i++)
+    incrementa();
 
-system ("pause");
-return 0;
+    system ("pause");
+    return 0;
 }
